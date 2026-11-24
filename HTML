@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #4b59a7;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #4b59a7;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #303f8f;
+        }
+
+        #message {
+            color: #4b59a7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Hello, Cheska Fornis! 👋</h1>
+
+        <p>Happy Christmas!</p>
+
+        <p>I hope you enjoy your holiday, Cheska, and have a wonderful day!</p>
+
+        <button onclick="showGreeting()">Click Me</button>
+
+        <h2 id="message"></h2>
+
+    </div>
+
+    <script>
+        function showGreeting() {
+            document.getElementById("message").textContent =
+                "Happy Christmas, Cheska! 😊";
+        }
+    </script>
+
+</body>
+</html>
